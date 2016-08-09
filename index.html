@@ -204,12 +204,13 @@
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <h2 class="h2-pagetitle white-text">Contact Me</h2> <small class="section-text white-text">Have a Project you'd like to get started? Click the button below to fill out a project request and I will get back to you ASAP!</small> <a class="btn btn-lg CTA-btn break-centered top-margin btn-warning bottom-margin big-btn-red" href="https://docs.google.com/forms/d/e/1FAIpQLScq64ed72dj7HBRCOn_FYgM6I4C4nDkvm4v_Qw4sj0KwEiIvg/viewform?usp=send_form" target="_blank">Start Your Project Here</a> <small class="section-text white-text top-margin break-centered">Have a different question? Please reach out to me.</small>
-                <form action="contact.php" method="post" title="Contact Form">
+                <form  action="https://formspree.io/design@steviebales.com" method="post" title="Contact Form">
                     <div class="col-lg-6 col-md-6 col-sm-6 form-column-left">
-                        <input type="text" class="form-control" name="cf_name" placeholder="Your Name" value required> </div>
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" value required> </div>
                     <div class="col-md-6 col-sm-6 col-lg-6 form-column-right">
-                        <input type="email" class="form-control" name="cf_email" placeholder="Your Email" required> </div>
-                    <textarea class="form-control" name="cf_message" rows="3"></textarea>
+                        <input type="email" class="form-control" name="_replyto" placeholder="Your Email" required> </div>
+                    <textarea class="form-control" name="message" rows="3"></textarea>
+                    <input type="text" name="_gotcha" class="hidden" />
                     <button type="button" value="send" class="btn btn-default form-send btn-xs">Send</button>
                 </form>
             </div>
