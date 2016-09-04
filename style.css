@@ -13,6 +13,7 @@
 html,
 body
 {
+    height: 100%;
     background-color: #062842;
     max-width: 100%;
     overflow-x: hidden;
@@ -1008,16 +1009,13 @@ footer
         padding-right: 0px;
         padding-top: 12px;
         height: 40px;
+        <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         position: fixed;
         left: 0;
         right: 0;
         top: 0;
-=======
->>>>>>> parent of 76f3984... Mobile Viewpoint Fix 02
-=======
->>>>>>> parent of 76f3984... Mobile Viewpoint Fix 02
     }
     .site-wrapper
     {
