@@ -4338,7 +4338,6 @@ select[multiple].input-lg
     border-radius: 4px;
 }
 
-
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -4681,17 +4680,11 @@ fieldset[disabled] .btn-info.focus
     text-decoration: none;
 }
 
-
-
 .btn-warning:hover, .btn-warning:active
 {
     color: #e6e7e8;
     background-color: #636363;
 }
-
-
-
-
 
 .btn-warning:active,
 .btn-warning.active,
@@ -4699,8 +4692,6 @@ fieldset[disabled] .btn-info.focus
 {
     background-image: none;
 }
-
-
 
 .btn-warning .badge
 {
@@ -8647,7 +8638,8 @@ button.close
 }
 
 .carousel
-.carousel{
+.carousel
+{
     position: relative;
 }
 
@@ -8660,13 +8652,14 @@ button.close
 
 .carousel-inner > .item
 {
-    width: 700px;
+    width: 100%;
     position: relative;
     display: none;
     -webkit-transition: .6s ease-in-out left;
     -o-transition: .6s ease-in-out left;
     transition: .6s ease-in-out left;
 }
+
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img
@@ -8855,7 +8848,7 @@ button.close
     width: 60%;
     padding-left: 0;
     margin-left: -30%;
-    z-index: 15;    
+    z-index: 15;
     text-align: center;
     list-style: none;
 }
