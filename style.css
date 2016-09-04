@@ -1123,3 +1123,11 @@ footer
     font-size: 110%;
 }
 
+@media (max-width:699px)
+{
+    .carousel-inner
+    {
+        width: 100%;
+    }
+}
+
