@@ -1005,6 +1005,13 @@ footer
         padding-left: 0px;
         padding-right: 0px;
         height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
     }
     .site-wrapper
     {
