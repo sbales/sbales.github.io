@@ -4336,6 +4336,9 @@ select[multiple].input-lg
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+    color: #e6e7e8;
+    background: #636363;
+    text-decoration: none;
 }
 
 .btn:focus,
@@ -4354,6 +4357,7 @@ select[multiple].input-lg
 .btn.focus
 {
     text-decoration: none;
+    background-color: #062842;
 }
 
 .btn:active,
@@ -4458,7 +4462,7 @@ fieldset[disabled] .btn-default.focus
 .btn-primary
 {
     color: #e6e7e8;
-    background-color: #636363;
+    background-color: #be2627;
     text-decoration: none;
 }
 
@@ -4473,8 +4477,8 @@ fieldset[disabled] .btn-default.focus
 .btn-primary:hover
 {
     color: #e6e7e8;
-    background-color: #be2627;
 }
+
 
 .btn-primary:active,
 .btn-primary.active,
@@ -4602,9 +4606,8 @@ fieldset[disabled] .btn-success.focus
 
 .btn-info
 {
-    color: #fff;
     background-color: #5bc0de;
-    border-color: #46b8da;
+    text-decoration: none;
 }
 
 .btn-info:focus,
@@ -8649,7 +8652,6 @@ button.close
     width: 700px;
     overflow: hidden;
 }
-
 
 .carousel-inner > .item
 {
