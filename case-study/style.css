@@ -920,23 +920,137 @@ body
 
 .background
 {
-    background-image: url('Background.svg');
+    background-image: url('images/Background.svg');
     background-position: center;
     width: 100%;
     height: 100%;
+    padding-top: 30px;
 }
 
 .case-study
 {
     width: 70%;
-    padding: 20px;
+    padding: 10px;
+    min-height: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 50px auto;
+    background-color: #E6E7E8;
+    text-shadow: none;
+    font-family: 'open sans', sans-serif;
+    color: #062842;
+    text-align: left;
+    display: block;
 }
 
 .embedly-responsive
 {
     border-radius: 10px;
 }
+.main-navbar
+{
+    width: 100%;
+    padding: 10px 10%;
+    height: 60px;
+    display: table;
+    background-color: #062842;
+    font-family: Oswald;
+    font-size: 2em;
+    line-height: 0em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #be2627;
+    position: fixed;
+    z-index: 10;
+}
 
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: #062842;
+    z-index: 5;
+}
+
+.title-bar {
+    background-color: #be2627;
+    border-radius: 5px;
+    width: 275px;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: -25px;
+    line-height: 1em;
+}
+
+h4 {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5em;
+    color: #E6E7E8;
+    text-shadow: none;
+}
+
+.date {
+    text-align: right;
+    color: #636363;
+    margin-top: 15px;
+}
+
+.project-image {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px 0px;
+    }
+
+.smas {
+    background-image: url(smas/display-image.png);
+}
+
+h5 {
+    margin: 0px;
+    color: #be2627;
+    font-weight: 600;
+}
+
+p {
+    margin: 0px 0px 15px 0px;
+    font-size: 80%;
+}
+
+.left {
+    width: 60%;
+    float: left;
+}
+
+.right {
+    margin: 0px;
+    padding: 0px;
+    width: 40%;
+    float: right;
+}
+
+.title-row {
+    height: 50px;
+    width: 100%;
+}
+
+.website {
+    margin: auto 0;
+    text-align: center;
+    font-family: inherit;
+    text-decoration: none;
+    display: inline;
+    color: #be2627;
+}
+.website:hover{
+    color:#062842;
+}
