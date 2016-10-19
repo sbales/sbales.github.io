@@ -930,7 +930,7 @@ body
 .case-study
 {
     width: 70%;
-    padding: 10px;
+    padding: 20px;
     min-height: 100%;
     height: auto;
     border-radius: 5px;
@@ -976,18 +976,18 @@ body
 }
 
 .title-bar {
+    text-align: center;
     background-color: #be2627;
     border-radius: 5px;
     width: 275px;
     padding: 10px 15px 10px 15px;
     position: relative;
     margin-top: 10px;
-    margin-left: -25px;
+    margin-left: -35px;
     line-height: 1em;
 }
 
 h4 {
-    text-align: left;
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -1053,4 +1053,8 @@ p {
 }
 .website:hover{
     color:#062842;
+}
+
+.php {
+    background-image: url(properhijinx/display-image.png);
 }
