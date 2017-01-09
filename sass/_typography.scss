@@ -1,0 +1,419 @@
+p {
+    font-size: 100%;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    text-rendering: optimizeLegibility;
+    font-family: $bodyfont;
+    letter-spacing: -.02rem;
+    widows: 2;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 90%;
+    }
+}
+
+em,
+i {
+    font-style: italic;
+    line-height: inherit;
+}
+
+strong,
+b {
+    font-weight: bold;
+    line-height: inherit;
+}
+
+small {
+    font-size: 60%;
+    line-height: inherit;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1{
+    font-family: $titlefont;
+    font-weight: normal;
+    font-style: normal;
+    color: $primary;
+    text-rendering: optimizeLegibility;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    margin-left: 900px;
+    line-height: 75px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $titlefont;
+    font-weight: 300;
+    font-style: normal;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    color: $accent-light;
+    line-height: 0;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 125%;
+}
+
+h3 {
+    font-size: 118.75%;
+}
+
+h4 {
+    font-size: 112.5%;
+}
+
+h5 {
+    font-size: 106.25%;
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+}
+
+h6 {
+    font-size: 100%;
+}
+
+@media screen and (min-width: 40em) {
+    h1 {
+        font-size: 300%;
+        margin-left: 0px;
+    }
+    h2 {
+        font-size: 250%;
+    }
+    h3 {
+        font-size: 193.75%;
+    }
+    h4 {
+        font-size: 156.25%;
+    }
+    h5 {
+        font-size: 125%;
+    }
+    h6 {
+        font-size: 100%;
+    }
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: $secondary;
+}
+
+a img {
+    border: 0;
+}
+
+hr {
+    max-width: 62.5rem;
+    height: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #cacaca;
+    border-left: 0;
+    margin: 1.25rem auto;
+    clear: both;
+}
+
+ul,
+ol,
+dl {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    list-style-position: outside;
+}
+
+li {
+    font-size: 90%;
+}
+
+ul {
+    list-style-type: circle;
+    margin-left: 7%;
+}
+
+ol {
+    margin-left: 1.25rem;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+dl {
+    margin-bottom: 1rem;
+}
+
+dl dt {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+    padding: 0.5625rem 1.25rem 0 1.1875rem;
+    border-left: 1px solid #cacaca;
+}
+
+blockquote,
+blockquote p {
+    line-height: 1.6;
+    color: #8a8a8a;
+}
+
+cite {
+    display: block;
+    font-size: 125%;
+    text-align: right;
+    color: $secondary;
+    padding: 30px 0px;
+}
+
+cite:before {
+    content: '\2014 \0020';
+}
+
+abbr {
+    color: #0a0a0a;
+    cursor: help;
+    border-bottom: 1px dotted #0a0a0a;
+}
+
+code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-weight: normal;
+    color: #0a0a0a;
+    background-color: #e6e6e6;
+    border: 1px solid #cacaca;
+    padding: 0.125rem 0.3125rem 0.0625rem;
+}
+
+kbd {
+    padding: 0.125rem 0.25rem 0;
+    margin: 0;
+    background-color: #e6e6e6;
+    color: #0a0a0a;
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    border-radius: 3px;
+}
+
+.subheader {
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    line-height: 1.4;
+    color: $accent-light;
+}
+
+.lead {
+    font-size: 125%;
+    line-height: 1.6;
+}
+
+.stat {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+p + .stat {
+    margin-top: -1rem;
+}
+
+.no-bullet {
+    margin-left: 0;
+    list-style: none;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+@media screen and (min-width: 40em) {
+    .medium-text-left {
+        text-align: left;
+    }
+    .medium-text-right {
+        text-align: right;
+    }
+    .medium-text-center {
+        text-align: center;
+    }
+    .medium-text-justify {
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .large-text-left {
+        text-align: left;
+    }
+    .large-text-right {
+        text-align: right;
+    }
+    .large-text-center {
+        text-align: center;
+    }
+    .large-text-justify {
+        text-align: justify;
+    }
+}
+
+
+.menu-center {
+    line-height:45px;
+    height:45px;
+}
+li a{
+    font-family: $titlefont;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    color: $white;
+}
+a i{
+    color: $white;
+}
+a i:hover{
+    color: $primary;
+}
+
+.secondary-color {
+    color: $black;
+}
+
+.work-title {
+    opacity: 0;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); 
+    //left: 50%;
+    //transform: translate(-50%, 0%);
+}
+.work-title:hover{
+    color: $white;
+}
+
+
+.modal-title {
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+q {
+    font-family: $titlefont;
+    color: $primary;
+    text-align: justify;
+    display: block;
+    widows: 3;
+    @media screen and (max-width: 39.9375em) {
+        font-size: 90%;
+        margin: 0px 0;
+    }
+    @media screen and (min-width: 40em) {
+        margin: 5px 0;
+        font-size: 130%;
+    }
+    @media screen and (min-width: 64em) {
+        font-size: 150%;
+    }
+}
+
+.author {
+    line-height: 1.5;
+    color: $secondary;
+    text-align: right;
+    @media screen and (max-width: 39.9375em){
+        font-size: 80%
+    }
+    @media screen and (min-width: 40em){
+        font-size: 125%;
+    }
+    
+}
+.author a{
+    font-family: $bodyfont;
+    color: $secondary;
+    text-transform: none;
+    font-weight: bold;
+    font-size: 100%
+}
+.author a:hover{
+    color: $white;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.headshot-text {
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    @media screen and (min-width: 40em){
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    @media screen and (min-width: 64em) {
+        max-height: 80vh;
+        
+    }
+}
+
+small a {
+   color: $white; 
+}
+
+.site-link {
+    font-family: $titlefont;
+    font-size: 120%;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}

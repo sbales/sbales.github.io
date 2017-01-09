@@ -1,0 +1,152 @@
+.orbit {
+    height: 90%;
+    min-height: 90%;
+    height: calc(100% - 40px);
+    width: 100%;
+    position: relative;
+}
+
+.orbit-container {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+    width: 100%;
+    height: 90%;
+    min-height: 90%;
+    height: calc(100% - 1.7rem);
+}
+
+.orbit-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.orbit-slide.no-motionui.is-active {
+    top: 0;
+    left: 0;
+}
+
+.orbit-figure {
+    margin: 0;
+}
+
+.orbit-image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    height: calc(100% - 40px);
+    @media screen and (max-width: 449px) {
+        object-fit: contain;
+    }
+    @media screen and (min-width: 450px) {
+        object-fit: cover;
+    }
+    
+}
+
+.orbit-bullets {
+    padding-bottom: .5rem;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.orbit-bullets button {
+    width: .7rem;
+    height: .7rem;
+    margin-bottom: 0px;
+    padding: 0px;
+    background-color: $accent-light;
+    border-radius: 50%;
+}
+
+.orbit-bullets button.is-active {
+    background-color: $secondary;
+}
+
+.orbit-caption {
+    position: absolute;
+    line-height: 40px;
+    bottom: 0;
+    width: 100%;
+    color: $white;
+}
+
+.orbit-previous,
+.orbit-next {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 1rem;
+    color: $white;
+}
+
+[data-whatinput='mouse'] .orbit-previous,
+[data-whatinput='mouse'] .orbit-next {
+    outline: 0;
+}
+
+.orbit-previous:hover,
+.orbit-next:hover,
+.orbit-previous:active,
+.orbit-next:active,
+.orbit-previous:focus,
+.orbit-next:focus {
+    background-color: rgba(10, 10, 10, 0.5);
+}
+
+.orbit-previous {
+    left: 0;
+}
+
+.orbit-next {
+    left: auto;
+    right: 0;
+}
+.review-previous, .review-next{
+    color: $accent-light;
+    padding: 0px;
+    margin: 0px;
+}
+.review-previous:hover,
+.review-next:hover,
+.review-previous:active,
+.review-next:active,
+.review-previous:focus,
+.review-next:focus {
+    background-color: rgba(10, 10, 10, 0);
+    color: $secondary;
+}
+
+[data-whatinput='mouse'] .orbit-bullets {
+    outline: 0;
+}
+
+.nav-bullets {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    position: static;
+    background-color: transparent;
+}
+.reviews {
+    height: 50vh;
+    min-height: 350px;
+    max-height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.review-container {
+    padding: 0 35px;
+}
+
+.review-slide {
+    height: 100%;
+    width: 100%;
+}

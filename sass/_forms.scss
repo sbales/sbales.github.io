@@ -1,0 +1,181 @@
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.4375rem;
+    padding: 0.5rem;
+    border: 1px solid #cacaca;
+    margin: 0 0 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #0a0a0a;
+    background-color: $white;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    border-radius: 3px;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+[type='text']:focus,
+[type='password']:focus,
+[type='date']:focus,
+[type='datetime']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='week']:focus,
+[type='email']:focus,
+[type='number']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='color']:focus,
+textarea:focus {
+    border: 1px solid #8a8a8a;
+    background-color: $white;
+    outline: none;
+    box-shadow: 0 0 5px #cacaca;
+    transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+textarea[rows] {
+    height: auto;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #cacaca;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #cacaca;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #cacaca;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #cacaca;
+}
+
+input:disabled,
+input[readonly],
+textarea:disabled,
+textarea[readonly] {
+    background-color: #e6e6e6;
+    cursor: not-allowed;
+}
+
+[type='submit'],
+[type='button'] {
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type='search'] {
+    box-sizing: border-box;
+}
+
+[type='file'],
+[type='checkbox'],
+[type='radio'] {
+    margin: 0 0 1rem;
+}
+
+[type='checkbox'] + label,
+[type='radio'] + label {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    vertical-align: baseline;
+}
+
+[type='checkbox'] + label[for],
+[type='radio'] + label[for] {
+    cursor: pointer;
+}
+
+label > [type='checkbox'],
+label > [type='radio'] {
+    margin-right: 0.5rem;
+}
+
+[type='file'] {
+    width: 100%;
+}
+
+.form-error {
+    display: none;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: $secondary;
+}
+
+.form-error.is-visible {
+    display: block;
+}
+
+.contact-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.message-send {
+    background-color: transparent;
+    border: 2px solid;
+    padding: 5px 10px;
+}
+
+.message-send:hover {
+    background-color: #815D42;
+}
+.contact-page{
+    min-height: 66vh;
+}
+#contact-form [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], #contact-form [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], #contact-form textarea{
+    border: 2px solid #580B1E;
+    background-color: transparent;
+    color: #580B1E;
+}
+#contact-form ::-webkit-input-placeholder {
+   color: rgba(88, 11, 30, 0.5);
+}
+
+#contact-form :-moz-placeholder { /* Firefox 18- */
+   color: rgba(88, 11, 30, 0.5);  
+}
+
+#contact-form ::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(88, 11, 30, 0.5);  
+}
+
+#contact-form :-ms-input-placeholder {  
+   color: rgba(88, 11, 30, 0.5);  
+}
