@@ -4215,10 +4215,13 @@ table.hover tr:nth-of-type(even):hover {
       padding-top: 75px;
       padding-right: 0px;
       padding-bottom: 35px;
-      width: 65%;
+      width: 85%;
       margin: auto;
       height: 100vh;
       vertical-align: middle; } }
+  @media screen and (min-width: 64em) {
+    .home-page {
+      width: 65%; } }
 
 #content {
   min-height: 100%;
