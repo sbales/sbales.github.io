@@ -26,7 +26,7 @@ body {
   margin: 0px;
   padding: 0px;
   min-height: 100%;
-  width: 100%;
+  max-width: 100vw;
   background-color: #062842;
   background-image: url(/images/Background.svg);
   background-position: top;
@@ -4369,6 +4369,10 @@ table.hover tr:nth-of-type(even):hover {
   display: table-cell;
   vertical-align: middle; }
 
+.google-form {
+  height: 100vh;
+  width: 100%; }
+
 .no-margin {
   margin: 0px; }
 
@@ -4444,7 +4448,7 @@ h1 {
   text-rendering: optimizeLegibility;
   margin-top: 0px;
   margin-bottom: 1rem;
-  margin-left: 900px;
+  margin-left: 90px;
   line-height: 75px; }
 
 h2,
