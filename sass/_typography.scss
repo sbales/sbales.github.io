@@ -4,11 +4,15 @@ p {
     margin-bottom: .5rem;
     text-rendering: optimizeLegibility;
     font-family: $bodyfont;
-    letter-spacing: -.02rem;
+    letter-spacing: -.025rem;
     widows: 2;
     @media screen and (max-width: 39.9375em) {
         font-size: 90%;
     }
+}
+.intro{
+    font-weight: 600;
+    text-align: center;
 }
 
 em,
@@ -29,33 +33,88 @@ small {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1{
+h1,
+h2,
+{
     font-family: $titlefont;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
-    color: $primary;
+    color: $secondary;
     text-rendering: optimizeLegibility;
     margin-top: 0px;
     margin-bottom: 1rem;
-    margin-left: 90px;
-    line-height: 75px;
 }
-
-h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: $titlefont;
     font-weight: 300;
     font-style: normal;
-    color: inherit;
     text-rendering: optimizeLegibility;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    line-height: 1.4;
+}
+h1 {
+    font-size: 175%;
+    letter-spacing: .05rem;
 }
 
+h2 {
+    font-size: 125%;
+}
+
+h3 {
+    font-family: $titlefont;
+    color: $primary;
+    font-size: 118.75%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-family: $bodyfont;
+    color: $primary;
+    padding-right: 5px;
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: $bodyfont;
+    color: $secondary;
+    font-style: italic;
+    font-size: 80%;
+}
+
+h6 {
+    font-family: $bodyfont;
+    color: $primary;
+    font-size: 80%;
+    text-align: right;
+    color: $accent-dark;
+}
+
+@media screen and (min-width: 40em) /*medium screen*/ {
+    h1 {
+        font-size: 300%;
+        margin-left: 0px;
+    }
+    h2 {
+        font-size: 250%;
+    }
+    h3 {
+        font-size: 150%;
+    }
+    h4 {
+        font-size: 90%;
+    }
+    h5 {
+        font-size: 90%;
+        padding-right: 5px;
+    }
+    h6 {
+        font-size: 80%;
+        padding-right: 10px;
+    }
+}
 h1 small,
 h2 small,
 h3 small,
@@ -66,56 +125,8 @@ h6 small {
     line-height: 0;
 }
 
-h1 {
-    font-size: 150%;
-}
-
-h2 {
-    font-size: 125%;
-}
-
-h3 {
-    font-size: 118.75%;
-}
-
-h4 {
-    font-size: 112.5%;
-}
-
-h5 {
-    font-size: 106.25%;
-    text-transform: uppercase;
-    letter-spacing: .03rem;
-}
-
-h6 {
-    font-size: 100%;
-}
-
-@media screen and (min-width: 40em) {
-    h1 {
-        font-size: 300%;
-        margin-left: 0px;
-    }
-    h2 {
-        font-size: 250%;
-    }
-    h3 {
-        font-size: 193.75%;
-    }
-    h4 {
-        font-size: 156.25%;
-    }
-    h5 {
-        font-size: 125%;
-    }
-    h6 {
-        font-size: 100%;
-    }
-}
-
 a {
-    color: $primary;
+    color: $accent-light;
     text-decoration: none;
     line-height: inherit;
     cursor: pointer;
@@ -123,7 +134,7 @@ a {
 
 a:hover,
 a:focus {
-    color: $secondary;
+    color: $primary;
 }
 
 a img {
@@ -149,8 +160,22 @@ dl {
     list-style-position: outside;
 }
 
-li {
-    font-size: 90%;
+.menu li a {
+    font-family: $titlefont;
+    font-weight: 300;
+    line-height: 25px;
+    color: $secondary;
+    text-align: right;
+    padding: 0px 0px 0px 20px;
+    @media only screen { 
+    font-size: 12pt;
+    }
+    @media only screen and (min-width: 40.063em) { 
+    font-size: 18pt;
+    }
+}
+.menu li a:hover{
+    color: $primary;
 }
 
 ul {
@@ -305,70 +330,36 @@ p + .stat {
     line-height:45px;
     height:45px;
 }
-li a{
-    font-family: $titlefont;
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
-    color: $white;
-}
-a i{
-    color: $white;
-}
-a i:hover{
-    color: $primary;
-}
 
 .secondary-color {
-    color: $black;
-}
-
-.work-title {
-    opacity: 0;
-    color: $white;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 45%;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); 
-    //left: 50%;
-    //transform: translate(-50%, 0%);
-}
-.work-title:hover{
-    color: $white;
-}
-
-
-.modal-title {
-    line-height: 40px;
-    margin: 0px;
-    padding: 0px;
+    color: $secondary;
 }
 
 q {
-    font-family: $titlefont;
+    text-rendering: optimizeLegibility;
+    font-family: $bodyfont;
+    letter-spacing: -.025rem;
+    widows: 2;
     color: $primary;
     text-align: justify;
     display: block;
-    widows: 3;
     @media screen and (max-width: 39.9375em) {
         font-size: 90%;
+        line-height: 130%;
         margin: 0px 0;
     }
     @media screen and (min-width: 40em) {
         margin: 5px 0;
-        font-size: 130%;
+        font-size: 100%;
     }
     @media screen and (min-width: 64em) {
-        font-size: 150%;
+        font-size: 110%;
     }
 }
 
 .author {
     line-height: 1.5;
-    color: $secondary;
-    text-align: right;
+    color: $primary;
     @media screen and (max-width: 39.9375em){
         font-size: 80%
     }
@@ -379,13 +370,13 @@ q {
 }
 .author a{
     font-family: $bodyfont;
-    color: $secondary;
+    color: $primary;
     text-transform: none;
-    font-weight: bold;
-    font-size: 100%
+    font-size: 90%;
+    text-transform: uppercase;
 }
 .author a:hover{
-    color: $white;
+    color: $secondary;
 }
 
 .no-border {
@@ -407,13 +398,44 @@ q {
     }
 }
 
-small a {
-   color: $white; 
+.small {
+    font-size: 80%;
+}
+a.small{
+    color: $accent-dark;
+}
+a.small:hover{
+    color: $primary;
 }
 
-.site-link {
-    font-family: $titlefont;
-    font-size: 120%;
-    margin-left: 20px;
-    padding-bottom: 10px;
+.copyright {
+    font-size: 6pt;
+    color: $accent-light;
+}
+.copyright:hover{
+    color: $accent-dark;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium-center {
+    @media only screen and (min-width: 40.063em) { 
+        text-align: center;
+    }
+}
+
+.medium-right {
+    @media only screen and (min-width: 40.063em) { 
+        text-align: right;
+    }
+}
+
+.standard-link {
+    color: $primary;
+    font-style: italic;
+}
+.standard-link:hover{
+    color: $secondary;
 }

@@ -16,7 +16,6 @@
     font-family: $titlefont;
     text-transform: uppercase;
     letter-spacing: .03rem;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 [data-whatinput='mouse'] .button {
@@ -50,13 +49,13 @@
 
 .button.primary {
     background-color: $primary;
-    color: $white;
+    color: $accent-light;
 }
 
 .button.primary:hover,
 .button.primary:focus {
     background-color: $primary;
-    color: $black;
+    color: $accent-dark;
 }
 
 .button.secondary {
@@ -194,15 +193,14 @@
 }
 
 .button.hollow.warning {
-    border: 1px solid $accent-dark;
+    border: none;
     color: $accent-dark;
      background-color: transparent;
 }
 
 .button.hollow.warning:hover,
 .button.hollow.warning:focus {
-    border-color: $accent-dark;
-    color: $accent-dark;
+    color: $secondary;
 }
 
 .button.hollow.body-font {
@@ -505,9 +503,10 @@
     }
 }
 .active {
-    color: $black;
+    opacity: 0.5;
+    color: $primary !important;
     cursor: default;
 }
 .active:hover{
-    color: $black;
+    color: $primary;
 }

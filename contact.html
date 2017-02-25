@@ -5,85 +5,64 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Stevie Bales | Visual Interaction Designer | Springfield Missouri</title>
-    <meta name="description" content="Stevie Bales, a visual Interaction Designer. Officially, her job is to create and develop graphic and digital designs that generate leads, connect with users, and are optimized for a specific audience. But really? She spends time getting to know and understand the clients she works for - like non-profits, small independent business, and their target markets. She uses this relationship to help them determine their largest design challenges, and solves them using her three (3)+ years of experience. Currently residing in the Springfield, Missouri area, she works with clients all over the USA.">
+    <!--Page Information-->
+    <title>Stevie Bales | Graphic Interaction Designer</title>
+    <meta name="description" content="Stevie Bales is a Graphic and Interaction Designer with previous experience in print, branding, digital media, and experiential design. She has skills in visual graphics (4+ years), digital development (2+ years), and envrionmental design (6+ years). Stevie currently resides in Springfield Missouri but is planning a move to Boston Massachusetts on May 1st.">
     <meta name="author" content="Stevie Bales">
     <!--favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="images/favicon/manifest.josn">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="Stevie Bales: Visual Interaction Designer">
-    <meta name="application-name" content="Stevie Bales: Visual Interaction Designer">
-    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#062842">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#be2627">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#e6e7e8">
     <!--stylesheets & fonts-->
-    <link rel="stylesheet" href="/css/stylesheet.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald" rel="stylesheet"> </head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Oswald:300,400" rel="stylesheet"> </head>
 
 <body>
     <div class="header">
-        <div class="hide-for-small-only columns medium-2">
-            <a href="index"><img class="site-logo" src="images/mobile-logo.svg" alt="Small round logo for Stevie Bales"></a>
+        <div class="column small-1 no-margin no-padding">
+            <a href="http://www.steviebales.com"><img class="small-logo" src="images/logo-small.svg"></a>
         </div>
-        <div class="small-12 medium-10 columns no-margin no-padding">
-            <ul class="menu text-center expanded menu-center">
+        <div class="column small-11 no-margin no-padding">
+            <ul class="menu align-right">
+                <li><a href="contact" class="active">Contact</a></li>
+                <li><a href="references">References</a></li>
+                <li><a href="http://portfolio.steviebales.com" target="_blank">Portfolio</a></li>
                 <li><a href="about">About</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="http://portfolio.steviebales.com">Work</a></li>
-                <li><a href="reviews">Reviews</a></li>
-                <li><a class="active" href="contact">Contact</a></li>
             </ul>
         </div>
     </div>
-    <div id="content" class="small-width-template">
-        <a href="index"><img class="show-for-small-only mobile-logo" src="/images/mobile-logo.svg" alt="Small round logo for Stevie Bales"></a>
+    <div id="content">
         <h1>Contact Me.</h1>
-        <p class="lead">If you are looking to hire me, start a new design project, or just have a quick chat, get in touch with me using the form below.
-            <br>Talk to you soon!</p>
+        <p>If you are looking to hire me, start a new design project, or just have a quick chat, get in touch with me is using the form below. Talk to you soon!</p>
+        <div class="row">
+            <div class="column no-padding no-margin medium-4"> <i class="fa fa-envelope-o secondary-color" aria-hidden="true"></i> <a href="mailto:design@steviebales.com" class="small">design@steviebales.com</a> </div>
+            <div class="column no-padding no-margin medium-4 medium-center"> <i class="fa fa-phone secondary-color" aria-hidden="true"></i> <a href="tel:14178930839" class="small">(417) 893 0839</a> </div>
+            <div class="column no-padding no-margin medium-4 medium-right"> <i class="fa fa-map-marker secondary-color" aria-hidden="true"></i> <a href="https://www.google.com/maps/place/Springfield,+MO/data=!4m2!3m1!1s0x87cf62f745c8983f:0x6bfd6cb31e690da0?sa=X&ved=0ahUKEwi1x42woqTSAhVFQyYKHSc6DRAQ8gEIGTAA" class="small">Springfield, MO</a> </div>
+        </div>
         <br>
         <form action="https://formspree.io/design@steviebales.com" method="post" title="Contact Form">
-            <div class="row columns">
+            <div class="row columns no-margin no-padding">
                 <input type="text" name="name" placeholder="Name*" required><span class="show-for-sr">Name:</span>
                 <input type="text" name="company" placeholder="Company"><span class="show-for-sr">Company:</span>
                 <input type="email" class="form-control" name="_replyto" placeholder="Email*" required><span class="show-for-sr">Email:</span>
                 <textarea name="message" rows="3" placeholder="Message*" required></textarea><span class="show-for-sr">Message:</span>
                 <input type="text" name="_gotcha" class="hide" />
-                <input type="submit" class="button alert text-right float-right" name="send" value="send">
+                <input type="submit" class="button primary" name="send" value="send">
                 <input type="hidden" name="_next" value="http://www.steviebales.com" />
                 <input type="hidden" name="_subject" value="Question for Stevie Bales!" /> </div>
         </form>
-        <a href="ebook" class="button warning expanded">FREE eBook</a>
     </div>
     <div class="text-center" id="social-media-bar"> <a href="http://www.linkedin.com/in/steviebales" target="_blank"><i class="fa fa-linkedin"></i></a>
         <br> <a href="http://www.facebook.com/steviebales" target="_blank"><i class="fa fa-facebook"></i></a>
-        <br> <a href="http://www.behance.net/steviebales" target="_blank"><i class="fa fa-behance"></i></a>
         <br> <a href="http://www.pinterest.com/steviebales" target="_blank"><i class="fa fa-pinterest"></i></a>
         <br> <a href="https://github.com/sbales" target="_blank"><i class="fa fa-github"></i></a> </div>
-    <div class="footer">
-        <div class="columns small-4"><small>© Stevie Bales 2017.</small></div>
-        <div class="columns small-8 text-right"><small><a  href="ebook">eBook</a> | <a  href="sitemap">Sitemap</a> | <a  href="privacy">Privacy Policy</a></small></div>
-    </div>
+    <div class="footer"> <a href="http://www.steviebales.com" class="copyright">© Stevie Bales 2017.</a> </div>
 </body>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/what-input.min.js"></script>
-<script src="/js/foundation.min.js"></script>
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o)
-            , m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-78526787-1', 'auto');
-    ga('send', 'pageview');
-</script>
 
 </html>
