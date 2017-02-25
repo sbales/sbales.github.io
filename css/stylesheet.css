@@ -40,12 +40,20 @@ body:before {
   height: 100%;
   z-index: -1;
   opacity: 0.07;
-  background-image: url(/images/abstract.jpg);
   -ms-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover; }
+  @media only screen and (max-width: 40em) {
+    body:before {
+      background-image: url(/images/abstract-small.jpg); } }
+  @media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    body:before {
+      background-image: url(/images/abstract-medium.jpg); } }
+  @media only screen and (min-width: 64.063em) {
+    body:before {
+      background-image: url(/images/abstract-large.jpg); } }
 
 /* HTML5 display definitions
      ========================================================================== */
