@@ -28,9 +28,11 @@ body::-webkit-scrollbar {
 }
 .homepage#content{
     height: 100%;
+    height: calc(100% - 45px);
     width: 100%;
     overflow: hidden;
     margin: 0px;
+    
 }
 
 
@@ -67,6 +69,7 @@ body::-webkit-scrollbar {
 
 #content {
     width: 100%;
+    height: 100%;
     height: calc(100% - 50px);
     overflow: auto;
     z-index: 1;
@@ -400,4 +403,8 @@ body::-webkit-scrollbar {
 
 .small-top-padding {
     padding-top: 5px;
+}
+
+.no-overflow {
+    overflow: hidden;
 }
