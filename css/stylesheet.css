@@ -5141,6 +5141,7 @@ label > [type='radio'] {
   background-color: #062842;
   color: #FFF;
   font-family: "Oswald", sans-serif;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .03rem; }
 
