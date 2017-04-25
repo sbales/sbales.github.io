@@ -56,7 +56,7 @@
 .button.primary:hover,
 .button.primary:focus {
     background-color: $primary;
-    color: $accent-dark;
+    color: $secondary;
 }
 
 .button.secondary {
@@ -129,7 +129,7 @@
 .button.hollow {
     border: 1px solid $primary;
     color: $primary;
-     background-color: transparent;
+    background-color: transparent;
 }
 
 .button.hollow,
@@ -145,27 +145,25 @@
 }
 
 .button.hollow.primary {
-    border: 1px solid $primary;
+    border: none;
     color: $primary;
-     background-color: transparent;
+    background-color: transparent;
 }
 
 .button.hollow.primary:hover,
 .button.hollow.primary:focus {
-    border-color: $primary;
-    color: $primary;
+    opacity: 0.5;
 }
 
 .button.hollow.secondary {
-    border: 1px solid $secondary;
+    border: none;
     color: $secondary;
-     background-color: transparent;
+    background-color: transparent;
 }
 
 .button.hollow.secondary:hover,
 .button.hollow.secondary:focus {
-    border-color: $secondary;
-    color: $secondary;
+    opacity: 0.5;
 }
 
 .button.hollow.alert {
@@ -201,7 +199,7 @@
 
 .button.hollow.warning:hover,
 .button.hollow.warning:focus {
-    color: $secondary;
+    opacity: 0.5;
 }
 
 .button.hollow.body-font {
@@ -504,10 +502,12 @@
     }
 }
 .active {
-    opacity: 0.5;
-    color: $primary !important;
-    cursor: default;
+    opacity: 1 !important;
+    color: inherit;
+    cursor: none;
 }
+
+
 .active:hover{
-    color: $primary;
+    opacity: 1.0;
 }

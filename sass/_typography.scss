@@ -1,7 +1,7 @@
 p {
     font-size: 100%;
-    line-height: 1.2;
-    margin-bottom: .5rem;
+    line-height: 1.4;
+    margin-bottom: .75rem;
     text-rendering: optimizeLegibility;
     font-family: $bodyfont;
     letter-spacing: -.025rem;
@@ -19,6 +19,10 @@ em,
 i {
     font-style: italic;
     line-height: inherit;
+}
+.logo-title i{
+    font-style: normal;
+    color: $secondary;
 }
 
 strong,
@@ -75,6 +79,18 @@ h4 {
     padding-right: 5px;
     font-size: 80%;
     text-transform: uppercase;
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+
+h4 a {
+    color: $secondary;
+}
+
+h4 a:hover{
+    opacity: 0.5;
 }
 
 h5 {
@@ -87,10 +103,22 @@ h5 {
 h6 {
     font-family: $bodyfont;
     color: $primary;
-    font-size: 80%;
-    text-align: right;
+    color: $accent-dark;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h6 a{
+   opacity: 1.0;
     color: $accent-dark;
 }
+h6 a:hover, h6 a:focus{
+    opacity: 0.5;
+}
+
+
+
+
 
 @media screen and (min-width: 40em) /*medium screen*/ {
     h1 {
@@ -115,7 +143,11 @@ h6 {
         padding-right: 10px;
     }
 }
-h1 small,
+h1 small
+{
+    color: $accent-dark;
+    font-size: 40%;
+}
 h2 small,
 h3 small,
 h4 small,
@@ -167,6 +199,7 @@ dl {
     color: $secondary;
     text-align: right;
     padding: 0px 0px 0px 20px;
+    opacity: 0.5;
     @media only screen { 
     font-size: 12pt;
     }
@@ -175,7 +208,7 @@ dl {
     }
 }
 .menu li a:hover{
-    color: $primary;
+    opacity: 1.0;
 }
 
 ul {
@@ -217,11 +250,13 @@ blockquote p {
 }
 
 cite {
+    width: 75%;
     display: block;
-    font-size: 125%;
+    font-size: 95%;
     text-align: right;
     color: $secondary;
-    padding: 30px 0px;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
 cite:before {
@@ -344,16 +379,20 @@ q {
     text-align: justify;
     display: block;
     @media screen and (max-width: 39.9375em) {
-        font-size: 90%;
+        font-size: 100%;
         line-height: 130%;
         margin: 0px 0;
     }
     @media screen and (min-width: 40em) {
-        margin: 5px 0;
+        margin: 0px 10px;
         font-size: 100%;
+        width: 75%;
+        margin: auto;
     }
     @media screen and (min-width: 64em) {
         font-size: 110%;
+        width: 75%;
+        margin: auto;
     }
 }
 
@@ -412,9 +451,7 @@ a.small:hover{
     font-size: 6pt;
     color: $accent-light;
 }
-.copyright:hover{
-    color: $accent-dark;
-}
+
 
 .light {
     font-weight: 300;
@@ -438,4 +475,28 @@ a.small:hover{
 }
 .standard-link:hover{
     color: $secondary;
+}
+
+.logo-title {
+    font-family: $titlefont;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 3px;
+    color: $primary;
+    font-size: 115%;
+}
+
+.dark-text {
+    color: $accent-dark !important;
+}
+
+.project-description {
+    font-size: 85%;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.current-page {
+    opacity: 0.5;
+    cursor: default;
 }
