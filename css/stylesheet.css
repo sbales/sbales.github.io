@@ -4965,6 +4965,9 @@ a.small:hover {
   opacity: 0.5;
   cursor: default; }
 
+.secondary-text {
+  color: #be2627; }
+
 [type='text'],
 [type='password'],
 [type='date'],
