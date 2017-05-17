@@ -5544,8 +5544,7 @@ label > [type='radio'] {
     margin-right: 0; } }
 .active {
   opacity: 1 !important;
-  color: inherit;
-  cursor: none; }
+  color: inherit; }
 
 .active:hover {
   opacity: 1.0; }
