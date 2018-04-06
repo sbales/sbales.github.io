@@ -1,4 +1,4 @@
-//Name of Project
+//Generative Shape #1
 //By Stevie Bales
 //Based on P_2_0_01 by Generative Gestaltung – Creative Coding im Web
 
