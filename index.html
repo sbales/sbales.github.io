@@ -313,19 +313,19 @@
                             <form role="form" id="homepageprojectform" data-toggle="validator" action="https://formspree.io/design@steviebales.com">
                                 <div class="row">
                                     <div class="large-12 columns">
-                                        <input type="text" id="name" placeholder="Name*" required>
+                                        <input type="text" id="name" placeholder="Name*" name="name" required>
                                     </div>
                                     <div class="large-6 columns">
-                                        <input type="email" id="email" placeholder="Email*" required>
+                                        <input type="email" id="email" placeholder="Email*" name="email" required>
                                     </div>
                                     <div class="large-6 columns">
-                                        <input type="text" id="phone" placeholder="Phone Number">
+                                        <input type="text" id="phone" placeholder="Phone Number" name="phone">
                                     </div>
                                     <div class="large-6 columns">
-                                        <input type="text" id="company" placeholder="Company*" required>
+                                        <input type="text" id="company" placeholder="Company*" name="company" required>
                                     </div>
                                     <div class="large-6 columns">
-                                        <input type="url" id="website" placeholder="Website">
+                                        <input type="url" id="website" name="url" placeholder="Website">
                                     </div>
                                     <div class="large-6 columns">
                                         <select name="budget" required>
@@ -349,10 +349,10 @@
                                         </select>
                                     </div>
                                     <div class="large-12 columns">
-                                        <textarea id="project-details" placeholder="Project Details*" required></textarea>
+                                        <textarea id="project-details" placeholder="Project Details*" name="project-details" required></textarea>
                                     </div>
                                     <div class="large-12 columns">
-                                        <button type="submit" id="form-submit" class="submit">Submit</button>
+                                        <button type="submit" id="form-submit" class="submit" name="submit">Submit</button>
                                         <div id="msgSubmit"></div>
                                     </div>
                                 </div>
