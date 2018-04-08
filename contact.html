@@ -108,7 +108,17 @@
                     <div class="medium-8 columns">
                         <div class="form-block">
                             <h5><strong>Get In Touch</strong></h5>
-                            <form role="form" id="contactForm" data-toggle="validator" action="https://formspree.io/design@steviebales.com" method="POST">
+
+                            <form id="contactForm" action="https://formspree.io/design@steviebales.com" method="POST">
+                                <input type="text" name="name" class="form-control">
+                                <input type="email" name="_replyto" class="form-control">
+                                <input type="text" name="_subject" class="form-control">
+                                <textarea class="form-control" id="message" name="message" class="form-control" required></textarea>
+                                <input type="hidden" name="_next" value="/contact" />
+                                <input type="submit" value="Send" class="button submit">
+                            </form>
+
+                            <!--<form role="form" id="contactForm" data-toggle="validator" action="https://formspree.io/design@steviebales.com" method="POST">
                                 <input type="hidden" name="_next" value="/contact" />
                                 <div class="row">
                                     <div class="large-12 columns form-group">
@@ -128,11 +138,11 @@
                                         <textarea class="form-control" id="message" name="message" required></textarea>
                                     </div>
                                     <div class="large-12 columns">
-                                        <input type="submit" id="form-submit" class="submit" value="Submit">
+                                        <input type="submit" id="form-submit" class="button submit" value="Submit">
                                         <div id="msgSubmit"></div>
                                     </div>
                                 </div>
-                            </form>
+                            </form>-->
                         </div>
                     </div>
                 </div>
