@@ -109,14 +109,49 @@
                         <div class="form-block">
                             <h5><strong>Get In Touch</strong></h5>
 
-                            <form id="contactForm" action="https://formspree.io/design@steviebales.com" method="POST">
-                                <input type="text" name="name" class="form-control">
-                                <input type="email" name="_replyto" class="form-control">
-                                
-                                <textarea class="form-control" id="message" name="message" class="form-control" required></textarea>
-                                <input type="hidden" name="_next" value="/contact" />
-                                <input type="submit" value="Send" class="button submit">
+                            <form id="myForm">
+                                <div class="large-12 columns form-group">
+                                        <label class="input-label">Name<abbr class="required">*</abbr></label>
+                                        <input type="text" class="form-control" id="name" name="full-name" required>
+                                    </div>
+                                    <div class="large-6 columns form-group">
+                                        <label class="input-label">Email<abbr class="required">*</abbr></label>
+                                        <input type="email" class="form-control" id="email" name="email-address" required>
+                                    </div>
+                                    <div class="large-6 columns form-group">
+                                        <label class="input-label">Subject</label>
+                                        <input type="text" class="form-control" id="subject" name="email-subject">
+                                    </div>
+                                    <div class="large-12 columns form-group">
+                                        <label class="input-label">Message<abbr class="required">*</abbr></label>
+                                        <textarea class="form-control" id="message" name="email-message" required></textarea>
+                                    </div>
+                                    <div class="large-12 columns">
+                                        <input type="submit" id="form-submit" class="button submit" value="Submit">
+                                        <div id="msgSubmit"></div>
+                                </div>
                             </form>
+
+                            <!-- Load jquery -->
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+                            <script>
+                                // POST form data to zapier on submit
+                                $('#myForm').submit(function(e) {
+                                    e.preventDefault();
+                                    $.ajax({
+                                        url: 'https://hooks.zapier.com/hooks/catch/1895048/f3ywvu/',
+                                        type: 'post',
+                                        data: $('#myForm').serialize(),
+                                        success: function() {
+                                            // Change URL to page you would like to send the user after form is submitted
+                                            window.location = "/contact";
+                                        }
+                                    });
+                                });
+
+                            </script>
+
 
                             <!--<form role="form" id="contactForm" data-toggle="validator" action="https://formspree.io/design@steviebales.com" method="POST">
                                 <input type="hidden" name="_next" value="/contact" />
