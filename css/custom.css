@@ -1,0 +1,53 @@
+h1 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2pt;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: "open sans", sans-serif;
+  font-weight: 200;
+}
+
+h5 {
+  font-family: "open sans", sans-serif;
+  font-weight: 200;
+}
+
+h6 {
+  font-family: "open sans", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: "open sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+em {
+  font-weight: 800 !important;
+  font-style: italic !important;
+}
+
+b:after {
+  background-color: #be2627;
+}
+
+button {
+  border: 2pt solid #be2627;
+}
+
+filled {
+  background-color: #be2627;
+}

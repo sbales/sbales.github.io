@@ -1,0 +1,113 @@
+//Typography
+h1 {
+    font-family: $title;
+    letter-spacing: $lspacing;
+    font-weight: $light-weight;
+}
+
+h2 {
+    font-family: $title;
+    font-weight: $light-weight;
+}
+
+h3 {
+    font-family: $title;
+    font-weight: $light-weight;
+}
+
+h4 {
+    font-family: $sans-serif;
+    font-weight: $light-weight;
+}
+
+h5 {
+    font-family: $sans-serif;
+    font-weight: $light-weight;
+}
+
+h6 {
+    font-family: $sans-serif;
+    font-weight: $bold-weight;
+}
+
+p {
+    font-family: $sans-serif;
+    font-weight: $med-weight;
+    font-size: 1.4rem;
+}
+
+b:after {
+    background-color: $secondary;
+}
+
+.serif{
+   font-family: $serif; 
+}
+
+.logo-text{
+    font-family: $title;
+    color: $primary;
+    text-transform: uppercase;
+}
+
+.logo-name{
+    text-shadow: 5px 5px 5px $light-grey;
+}
+
+//Colors
+.primary-text {
+    color: $primary;
+}
+
+.primary {
+    background-color: $primary;
+}
+
+.secondary-text {
+    color: $secondary;
+}
+
+.secondary {
+    background-color: $secondary;
+}
+
+//Buttons
+.button {
+    border: 2pt solid $secondary;
+}
+
+.filled {
+    background-color: $secondary;
+}
+
+//Forms
+footer button[type="submit"]{
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+}
+
+footer button[type="submit"]:hover{
+    border: 1px solid $black;
+    color: $black;
+    background-color: transparent!important;
+}
+
+//Images
+[data-overlay]:before, .overlay-color:before{
+    background: $dark-grey!important;
+}
+.overlay-dark > [data-overlay]:before, .overlay-color:before {
+    background: $primary!important;
+}
+[data-overlay]:before, .overlay-color:before .overlay-secondary{
+    background: $secondary!important;
+}
+.overlay-darkgrey > [data-overlay]:before, .overlay-color:before {
+    background: $dark-grey!important;
+}
+
+//Background Colors
+.lgrey-bg {
+    background: $light-grey
+}
