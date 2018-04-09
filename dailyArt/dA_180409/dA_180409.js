@@ -18,38 +18,32 @@
 var img;
 
 function preload() {
-  img = loadImage('data/image.jpg');
+    img = loadImage('data/image.jpg');
 }
 
 function setup() {
-  background(0);
+    background(0);
 }
 
 function draw() {
-  createCanvas(650, 450);
-  var tileCountX = mouseX / 3 + 1;
-  var tileCountY = mouseY / 3 + 1;
-  var stepX = width / tileCountX;
-  var stepY = height / tileCountY;
-  for (var gridY = 0; gridY < height; gridY += stepY) {
-    for (var gridX = 0; gridX < width; gridX += stepX) {
-      tint(255, 127);
-      image(img, gridX, gridY, stepX, stepY);
+    createCanvas(650, 450);
+    var tileCountX = mouseX / 3 + 1;
+    var tileCountY = mouseY / 3 + 1;
+    var stepX = width / tileCountX;
+    var stepY = height / tileCountY;
+    for (var gridY = 0; gridY < height; gridY += stepY) {
+        for (var gridX = 0; gridX < width; gridX += stepX) {
+            image(img, gridX, gridY, stepX, stepY);
+        }
     }
-  }
-}
-
-function mouseDragged() {
-  background(mouseX, mouseY, (mouseX*3/2));
 }
 
 function keyReleased() {
-  if (keyCode == 's' || 'S') 
-  {
-    textAlign(CENTER, CENTER);
-    textSize(10);
-    fill (255);
-    text('www.steviebales.com', windowWidth/2, windowHeight/2);
-    saveCanvas('steviebales_generativeArt#3', 'png');
-  }
+    if (keyCode == 's' || 'S') {
+        textAlign(CENTER, CENTER);
+        textSize(10);
+        fill(255);
+        text('www.steviebales.com', windowWidth / 2, windowHeight / 2);
+        saveCanvas('steviebales_generativeArt#3', 'png');
+    }
 }
