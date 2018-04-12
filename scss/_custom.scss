@@ -40,17 +40,17 @@ b:after {
     background-color: $secondary;
 }
 
-.serif{
-   font-family: $serif; 
+.serif {
+    font-family: $serif;
 }
 
-.logo-text{
+.logo-text {
     font-family: $title;
     color: $primary;
     text-transform: uppercase;
 }
 
-.logo-name{
+.logo-name {
     text-shadow: 5px 5px 5px $dark-grey;
 }
 
@@ -71,6 +71,11 @@ b:after {
     background-color: $secondary;
 }
 
+//Spacing
+.center-object {
+    margin: 0px auto;
+}
+
 //Buttons
 .button {
     border: 2pt solid $secondary;
@@ -81,33 +86,54 @@ b:after {
 }
 
 //Forms
-footer button[type="submit"]{
+footer button[type="submit"] {
     background-color: transparent;
     border: 1px solid $white;
     color: $white;
 }
 
-footer button[type="submit"]:hover{
+footer button[type="submit"]:hover {
     border: 1px solid $black;
     color: $black;
     background-color: transparent!important;
 }
 
 //Images
-[data-overlay]:before, .overlay-color:before{
+[data-overlay]:before,
+.overlay-color:before {
     background: $dark-grey!important;
 }
-.overlay-dark > [data-overlay]:before, .overlay-color:before {
+
+.overlay-dark > [data-overlay]:before,
+.overlay-color:before {
     background: $primary!important;
 }
-[data-overlay]:before, .overlay-color:before .overlay-secondary{
+
+[data-overlay]:before,
+.overlay-color:before .overlay-secondary {
     background: $secondary!important;
 }
-.overlay-darkgrey > [data-overlay]:before, .overlay-color:before {
+
+.overlay-darkgrey > [data-overlay]:before,
+.overlay-color:before {
     background: $dark-grey!important;
+}
+
+.blur-img {
+    blur:(2px);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
 }
 
 //Background Colors
 .lgrey-bg {
     background: $light-grey
+}
+
+//Header
+header.transparent-bg.small {
+    border-bottom: 1px solid rgba(10, 10, 10, 0.03);
+    box-shadow: 0px 5px 15px rgba(10, 10, 10, 0.03);
 }
