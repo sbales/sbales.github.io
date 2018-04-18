@@ -6,7 +6,7 @@
 var bubbles = []; // array of Bubble objects
 
 function setup() {
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight-70);
     fill(255, 55);
     stroke(255, 85);
 
@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-    background(50, 89, 100);
+    background(89, 50, 100);
     for (var i = 0; i < bubbles.length; i++) {
         // Draw the bubbles
         bubbles[i].display();
