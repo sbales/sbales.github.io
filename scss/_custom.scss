@@ -84,6 +84,9 @@ b:after {
 .filled {
     background-color: $secondary;
 }
+.filled:hover {
+    background-color: $primary;
+}
 
 //Forms
 footer button[type="submit"] {
