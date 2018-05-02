@@ -12016,7 +12016,7 @@ section:not(.light-bg):not(.dark-bg):not(.parallax):not(.image) + section.large-
 }
 
 .video-placeholder:hover .button.play {
-    background: #3f1f92;
+    background: $primary;
     border: none;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -12033,7 +12033,7 @@ section:not(.light-bg):not(.dark-bg):not(.parallax):not(.image) + section.large-
 }
 
 .video-placeholder:hover .button.play:hover {
-    background: #3f1f92 !important;
+    background: $primary !important;
 }
 
 .video-placeholder:hover .button.play.black {
@@ -17720,10 +17720,10 @@ button.filled i {
 .input-group-button select.filled.button:hover:focus,
 button.filled:focus,
 button.filled:hover {
-    background: #3f1f92;
+    background: $primary;
     border-width: 2px;
     border-style: solid;
-    border-color: #3f1f92;
+    border-color: $primary;
 }
 
 .button.filled.white,

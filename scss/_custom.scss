@@ -85,7 +85,7 @@ b:after {
     background-color: $secondary;
 }
 .filled:hover {
-    background-color: $primary;
+    background-color: $primary!important;
 }
 
 //Forms
