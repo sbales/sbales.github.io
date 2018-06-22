@@ -44,6 +44,10 @@ b:after {
   background-color: #be2627;
 }
 
+.bprimary:after {
+  background-color: #062842;
+}
+
 button {
   border: 2pt solid #be2627;
 }

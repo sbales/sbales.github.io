@@ -40,6 +40,10 @@ b:after {
     background-color: $secondary;
 }
 
+.bprimary:after {
+    background-color: $primary!important;
+}
+
 .serif {
     font-family: $serif;
 }
