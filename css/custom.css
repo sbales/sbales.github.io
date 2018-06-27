@@ -65,3 +65,13 @@ filled {
     text-shadow: 5px 5px 10px #e6e7e8!important;
     font-size: 14rem;
 }
+
+.ipad-portrait {
+    background-image: url(/assets/images/ipad-tablet-portrait-border.png);
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+
