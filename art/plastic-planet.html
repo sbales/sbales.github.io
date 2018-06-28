@@ -50,11 +50,11 @@
     <div class="main-container">
         <!-- HEADER -->
         <header class="transparent-bg text-white">
-            <div class="row" data-pgc-define="header" data-pgc-define-name="Header-main">
+            <div class="row">
                 <div class="logo">
                     <a href="http://www.steviebales.com"> 
-                            <img class="large-logo" src="assets/logos/logo-small-white.png" width="55" alt="Icon Logo"> 
-                            <img src="assets/logos/logo-long-transparent-800x180.png" class="small-logo" width="200" alt="Full Name Logo"> 
+                            <img class="large-logo" src="/assets/logos/logo-small-white.png" width="55" alt="Icon Logo"> 
+                            <img src="/assets/logos/logo-long-transparent-800x180.png" class="small-logo" width="200" alt="Full Name Logo"> 
                         </a>
                 </div>
                 <div class="menu-tint menu-trigger pushmenu"></div>
@@ -90,7 +90,28 @@
         <!-- END HEADER -->
         <!-- INNER CONTAINER -->
         <div class="inner-container">
-
+            
+            <!-- COUNTDOWN TO FIGMENT SECTION -->
+            <section class="full-height parallax" data-overlay="5" data-jarallax data-speed="0.2">
+                <img class="jarallax-img" src="/assets/images/dailyArt.jpg" alt="">
+                <div class="v-middle">
+                    <div class="row">
+                        <div class="large-12 columns text-center mb100 small-mb50">
+                            <h2 class="reveal-from-bottom">Plastic Planet is <em>preparing</em> to <b>launch</b> <em>soon</em></h2>
+                            <h3 class="subheader reveal-from-bottom">Come to <a href="http://boston.figmentproject.org/" target="_blank" style="text-decoration: none; color: white; font-size: inherit;">Figment Boston 2018</a> to see the magic of interaction through this installation looking at plastic use.</h3>
+                        </div>
+                        <!-- COUNTDOWN BLOCK -->
+                        <div class="countdown-block reveal-from-bottom">
+                            <div class="countdown" data-countdown="2018/07/29"></div>
+                        </div>
+                        <!-- END COUNTDOWN BLOCK -->
+                        <div class="large-6 small-12 large-centered text-center columns mt100 small-mt50 reveal-from-bottom">
+                            <p class="lead reveal-from-bottom">Check back often to see more details about the project!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END COUNTDOWN TO FIGMENT SECTION -->
 
             <!-- FOOTER -->
             <footer class="footer-2" data-overlay="0" data-pgc-define="footer" data-pgc-define-name="Footer-Main">
@@ -187,6 +208,7 @@
                 }
             });
         });
+
     </script>
     <!-- END SEND EMAILS SCRIPTS -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -216,6 +238,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-78526787-1');
+
     </script>
     <!-- END SCRIPTS -->
 </body>
