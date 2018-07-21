@@ -107,7 +107,7 @@
                         <!-- END COUNTDOWN BLOCK -->
                         <div class="large-8 small-12 large-centered text-center columns mt100 small-mt50 reveal-from-bottom">
                             <p class="reveal-from-bottom">Plastic Planet is an interactive and participatory installation &amp; exhibit that will be built cohesively with visitors at Figment Boston 2018. Together we will make a tribute to a lifestyle no longer appropriate for modern life on this planet, and pledge to build a better one through less plastic use.</p>
-                            <p class="lead reveal-from-bottom">Check back often to see more details about the project!</p>
+                            <p class="reveal-from-bottom">Together we will be building a piece of art and making public pledges to generate more art through digital website pieces displayed here.</p>
                         </div>
                     </div>
                 </div>
@@ -136,6 +136,9 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                        <div class="large-12 columns text-center mt50">
+                            <p class="lead reveal-from-bottom text-center">Check back often to see more details about the project!</p>
                         </div>
                     </div>
                 </div>
@@ -226,15 +229,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
         // POST form data to zapier on submit
-        $('#projectRequest').submit(function(e) {
+        $('#pledgeForm').submit(function(e) {
             e.preventDefault();
             $.ajax({
-                url: 'https://hooks.zapier.com/hooks/catch/1895048/f3yn46/',
+                url: 'https://hooks.zapier.com/hooks/catch/1895048/gbn15c/',
                 type: 'post',
-                data: $('#projectRequest').serialize(),
+                data: $('#pledgeForm').serialize(),
                 success: function() {
                     // Change URL to page you would like to send the user after form is submitted
-                    window.location = "/index";
+                    window.location = "/art/plastic-planet";
                 }
             });
         });
