@@ -1898,9 +1898,9 @@ Foundation.Motion = Motion;
     /**
      * Markup used for JS generated back button. Prepended to submenu lists and deleted on `destroy` method.
      * @option
-     * @example '<li><a>Back</a></li>'
+     * @example '<li><a>Back</a><li>'
      */
-    backButton: '<li class="js-drilldown-back" tabindex="0"><a>Back</a></li>',
+    backButton: '<li class="js-drilldown-back" tabindex="0"><a>Back</a><li>',
     /**
      * Markup used to wrap drilldown menu. Use a class name for independent styling, or the JS applied class: `is-drilldown`.
      * @option

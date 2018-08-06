@@ -4,14 +4,14 @@
 <head data-pgc-define="head" data-pgc-define-name="head">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-pgc-edit="title">Plastic Planet::Figment Boston 2018 | Stevie Bales | Experiential Graphic Designer | Interaction Designer</title>
+    <title data-pgc-edit="title">Plastic Planet::Figment Boston 2018 | Stevie Bales | Experiential Designer | Creating built-environment experiences using creative technology &amp; graphic design</title>
     <meta name="description" content="'Plastic Planet' is an interactive and participatory installation & exhibit that will be built cohesively with visitors at Figment Boston 2018. Together we will make a tribute to a lifestyle no longer appropriate for modern life on this planet, and pledge to build a better one through less plastic use." data-pgc-edit="description">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="summary">
 
     <!-- Open Graph data -->
-    <meta property="og:title" content="Plastic Planet::Figment Boston 2018 | Stevie Bales | Experiential Graphic Designer | Interaction Designer" />
+    <meta property="og:title" content="Plastic Planet::Figment Boston 2018 | Stevie Bales | Experiential Designer | Creating built-environment experiences using creative technology &amp; graphic design" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.steviebales.com/" />
     <meta property="og:image" content="http://www.steviebales.com/favicon/apple-touch-icon.png" />
@@ -62,21 +62,21 @@
                     <div id="nav" class="pushmenu">
                         <ul class="collapse">
                             <li>
-                                <a href="/">Home</a>
-                            </li>
+                            <a href="/">Home</a>
                             <li>
-                                <a href="/about">About</a>
-                            </li>
                             <li>
-                                <a href="/portfolio">Portfolio</a>
-                            </li>
+                            <a href="/about">About</a>
                             <li>
-                                <a href="/art">Art</a>
-                            </li>
-                            <!--    <li> <a href="#">Blog</a></li>  -->
                             <li>
-                                <a href="/contact">Contact</a>
-                            </li>
+                            <a href="/portfolio">Portfolio</a>
+                            <li>
+                            <li>
+                            <a href="/art">Art</a>
+                            <li>
+                            <!--    <li> <a href="#">Blog</a><li>  -->
+                            <li>
+                            <a href="/contact">Contact</a>
+                            <li>
                         </ul>
                     </div>
                     <div id="menu-trigger" class="menu-trigger">
@@ -131,7 +131,7 @@
                 <!-- END FORM SECTION -->
             </section>
             <!-- END PLEDGE FORM -->
-            
+
             <!-- MAIN PROJECT -->
             <section class="full-height parallax dark-bg">
                 <div class="v-middle">
@@ -159,21 +159,21 @@
                                         <img src="/assets/logos/long-long-white.png" width="200" alt="logo full name white">
                                     </a>
                             </div>
-                            <p style="padding-top:10px;">Experiential Graphic Designer<br>Interaction Designer</p>
+                            <p style="padding-top:10px;">Experiential Designer<br>Interaction Designer<br>Graphic Designer</p>
                             <div class="social-icons">
                                 <ul>
                                     <li>
                                         <a href="https://www.facebook.com/StevieBales/"><i class="fa fa-facebook"></i></a>
-                                    </li>
                                     <li>
-                                        <a href="https://www.pinterest.com/steviebales/"><i class="fa fa-pinterest"></i></a>
-                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/Stevie_notNicks"><i class="fa fa-twitter"></i></a>
+                                    <li>
                                     <li>
                                         <a href="https://www.linkedin.com/in/steviebales/"><i class="fa fa-linkedin"></i></a>
-                                    </li>
+                                    <li>
                                     <li>
                                         <a href="https://www.instagram.com/stevie_notnicks/"><i class="fa fa-instagram"></i></a>
-                                    </li>
+                                    <li>
                                 </ul>
                             </div>
                         </div>
@@ -183,20 +183,20 @@
                                 <ul>
                                     <li>
                                         <a href="/">Home</a>
-                                    </li>
+                                    <li>
                                     <li>
                                         <a href="/about">About Me</a>
-                                    </li>
+                                    <li>
                                     <li>
                                         <a href="/portfolio">Portfolio</a>
-                                    </li>
+                                    <li>
                                     <li>
                                         <a href="/art">Art</a>
-                                    </li>
-                                    <!--<li><a href="#">Blog</a></li>-->
+                                    <li>
+                                    <!--<li><a href="#">Blog</a><li>-->
                                     <li>
                                         <a href="/contact">Contact Me</a>
-                                    </li>
+                                    <li>
                                 </ul>
                             </div>
                         </div>
@@ -209,11 +209,11 @@
                                 <button type="submit" id="form-submit" class="">Send</button>
                             </form>
                         </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="row">
-                            <div class="large-12 columns text-center">
-                                <p class="copyright">&copy; 2018 Stevie Bales. All Rights Reserved.</p>
+                        <div class="bottom">
+                            <div class="row">
+                                <div class="large-12 columns text-center">
+                                    <p class="copyright">&copy; 2018 Stevie Bales. All Rights Reserved.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -225,58 +225,57 @@
         <!-- BACK TO TOP -->
         <a href="#0" class="backtotop"></a>
         <!-- END BACK TO TOP -->
-    </div>
-    <!-- END MAIN CONTAINER -->
-    <!-- SCRIPTS -->
-    <!-- SEND EMAIL SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-        // POST form data to zapier on submit
-        $('#pledgeForm').submit(function(e) {
-            e.preventDefault();
-            $.ajax({
-                url: 'https://hooks.zapier.com/hooks/catch/1895048/gbnldz/',
-                type: 'post',
-                data: $('#pledgeForm').serialize(),
-                success: function() {
-                    // Change URL to page you would like to send the user after form is submitted
-                    window.location = "/art/plastic-planet";
-                }
+        <!-- END MAIN CONTAINER -->
+        <!-- SCRIPTS -->
+        <!-- SEND EMAIL SCRIPTS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            // POST form data to zapier on submit
+            $('#pledgeForm').submit(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: 'https://hooks.zapier.com/hooks/catch/1895048/gbnldz/',
+                    type: 'post',
+                    data: $('#pledgeForm').serialize(),
+                    success: function() {
+                        // Change URL to page you would like to send the user after form is submitted
+                        window.location = "/art/plastic-planet";
+                    }
+                });
             });
-        });
 
-    </script>
-    <!-- END SEND EMAILS SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
-    <script src="/js/app.js"></script>
-    <script src="/js/jquery.countimator.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
-    <script src="https://unpkg.com/jarallax@1.9/dist/jarallax.min.js"></script>
-    <script src="https://unpkg.com/jarallax@1.9/dist/jarallax-video.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.0/js/lightcase.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
-    <script src="/js/validator.min.js"></script>
-    <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78526787-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+        </script>
+        <!-- END SEND EMAILS SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/js/foundation.min.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/jquery.countimator.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.min.js"></script>
+        <script src="https://unpkg.com/jarallax@1.9/dist/jarallax.min.js"></script>
+        <script src="https://unpkg.com/jarallax@1.9/dist/jarallax-video.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightcase/2.4.0/js/lightcase.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+        <script src="/js/validator.min.js"></script>
+        <script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78526787-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
 
-        gtag('config', 'UA-78526787-1');
+            gtag('config', 'UA-78526787-1');
 
-    </script>
-    <!-- END SCRIPTS -->
+        </script>
+        <!-- END SCRIPTS -->
 </body>
 
 </html>

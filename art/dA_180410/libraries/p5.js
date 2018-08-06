@@ -13597,32 +13597,32 @@ p5.prototype.createGraphics = function(w, h, renderer){
  * with the ones of pixels already in the display window (B):
  * <ul>
  * <li><code>BLEND</code> - linear interpolation of colours: C =
- * A*factor + B. This is the default blending mode.</li>
- * <li><code>ADD</code> - sum of A and B</li>
+ * A*factor + B. This is the default blending mode.<li>
+ * <li><code>ADD</code> - sum of A and B<li>
  * <li><code>DARKEST</code> - only the darkest colour succeeds: C =
- * min(A*factor, B).</li>
+ * min(A*factor, B).<li>
  * <li><code>LIGHTEST</code> - only the lightest colour succeeds: C =
- * max(A*factor, B).</li>
- * <li><code>DIFFERENCE</code> - subtract colors from underlying image.</li>
+ * max(A*factor, B).<li>
+ * <li><code>DIFFERENCE</code> - subtract colors from underlying image.<li>
  * <li><code>EXCLUSION</code> - similar to <code>DIFFERENCE</code>, but less
- * extreme.</li>
+ * extreme.<li>
  * <li><code>MULTIPLY</code> - multiply the colors, result will always be
- * darker.</li>
+ * darker.<li>
  * <li><code>SCREEN</code> - opposite multiply, uses inverse values of the
- * colors.</li>
+ * colors.<li>
  * <li><code>REPLACE</code> - the pixels entirely replace the others and
- * don't utilize alpha (transparency) values.</li>
+ * don't utilize alpha (transparency) values.<li>
  * <li><code>OVERLAY</code> - mix of <code>MULTIPLY</code> and <code>SCREEN
- * </code>. Multiplies dark values, and screens light values.</li>
+ * </code>. Multiplies dark values, and screens light values.<li>
  * <li><code>HARD_LIGHT</code> - <code>SCREEN</code> when greater than 50%
- * gray, <code>MULTIPLY</code> when lower.</li>
+ * gray, <code>MULTIPLY</code> when lower.<li>
  * <li><code>SOFT_LIGHT</code> - mix of <code>DARKEST</code> and
  * <code>LIGHTEST</code>. Works like <code>OVERLAY</code>, but not as harsh.
- * </li>
+ * <li>
  * <li><code>DODGE</code> - lightens light tones and increases contrast,
- * ignores darks.</li>
+ * ignores darks.<li>
  * <li><code>BURN</code> - darker areas are applied, increasing contrast,
- * ignores lights.</li>
+ * ignores lights.<li>
  * </ul>
  *
  * @method blendMode
@@ -20266,9 +20266,9 @@ p5.prototype.loadStrings = function (path, callback, errorCallback) {
  *
  * <p>Possible options include:
  * <ul>
- * <li>csv - parse the table as comma-separated values</li>
- * <li>tsv - parse the table as tab-separated values</li>
- * <li>header - this table has a header (title) row</li>
+ * <li>csv - parse the table as comma-separated values<li>
+ * <li>tsv - parse the table as tab-separated values<li>
+ * <li>header - this table has a header (title) row<li>
  * </ul>
  * </p>
  *

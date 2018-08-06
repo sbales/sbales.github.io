@@ -1834,13 +1834,13 @@ readers do not read off random characters that represent icons */
 .fa-pills:before {
   content: "\f484"; }
 
-.fa-pinterest:before {
+.fa-twitter:before {
   content: "\f0d2"; }
 
-.fa-pinterest-p:before {
+.fa-twitter-p:before {
   content: "\f231"; }
 
-.fa-pinterest-square:before {
+.fa-twitter-square:before {
   content: "\f0d3"; }
 
 .fa-plane:before {

@@ -1465,7 +1465,8 @@ img.single-image + p {
 }
 
 .vertical-heading {
-    font-size: 1.2rem;
+    font-family: $sans-serif;
+    font-size: 1.9rem;
     text-align: center;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -1474,20 +1475,25 @@ img.single-image + p {
     width: 100vw;
     position: absolute;
     top: 48.5%;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     -webkit-transform-origin: center;
     transform-origin: center;
 }
 
-.vertical-heading.text-left {
+.vertical-heading .float-left{
+    -webkit-transform: rotate(90deg)!important;
+    transform: rotate(90deg)!important;
+}
+
+.vertical-heading .text-left {
     text-align: left;
 }
 
 .vertical-heading.float-right {
     left: 43%;
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 p {
