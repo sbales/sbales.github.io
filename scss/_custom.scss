@@ -1,13 +1,15 @@
 //Typography
 h1 {
-    font-family: $title;
-    letter-spacing: $lspacing;
+    font-family: $sans-serif;
     font-weight: $light-weight;
 }
 
 h2 {
     font-family: $title;
     font-weight: $light-weight;
+    text-transform: uppercase;
+    letter-spacing: $lspacing;
+    color: $primary!important;
 }
 
 h3 {
@@ -21,19 +23,20 @@ h4 {
 }
 
 h5 {
-    font-family: $sans-serif;
+    font-family: $serif;
     font-weight: $light-weight;
+    color: $mid-grey;
 }
 
 h6 {
     font-family: $sans-serif;
-    font-weight: $bold-weight;
+    font-weight: $light-weight;
+    color: $primary;
 }
 
 p {
     font-family: $sans-serif;
-    font-weight: $med-weight;
-    font-size: 1.4rem;
+    font-weight: $light-weight;
 }
 
 b:after {
@@ -54,13 +57,21 @@ b:after {
     text-transform: uppercase;
 }
 
-.logo-name {
-    font-size: 14rem;
+m {
+    font-weight: $med-weight;
+}
+
+.sans-serif{
+    font-family: $sans-serif;
+}
+
+h2.small {
+    font-size: 2.8rem;
 }
 
 //Colors
 .primary-text {
-    color: $primary;
+    color: $primary!important;
 }
 
 .primary {
@@ -68,16 +79,32 @@ b:after {
 }
 
 .secondary-text {
-    color: $secondary;
+    color: $secondary!important;
 }
 
 .secondary {
     background-color: $secondary;
 }
 
+.text-darkg{
+    color: $dark-grey;
+}
+
 //Spacing
 .center-object {
     margin: 0px auto;
+}
+
+#home {
+    padding: 8rem;
+}
+
+.pt0 {
+    padding-top: 0!important;
+}
+
+.pt0 {
+    margin-top: 0!important;
 }
 
 //Buttons
@@ -108,7 +135,7 @@ footer button[type="submit"]:hover {
 //Images
 [data-overlay]:before,
 .overlay-color:before {
-    background: $dark-grey!important;
+    background: $white!important;
 }
 
 .overlay-dark > [data-overlay]:before,
@@ -135,9 +162,7 @@ footer button[type="submit"]:hover {
 }
 
 //Background Colors
-.lgrey-bg {
-    background: $light-grey
-}
+
 
 //Header
 header.transparent-bg.small {
@@ -145,8 +170,33 @@ header.transparent-bg.small {
     box-shadow: 0px 5px 15px rgba(10, 10, 10, 0.03);
 }
 
-
-
 .parallax-image-right {
     background-position: 100% 0!important;
+}
+
+//Lists
+ol.hash li,
+ul.hash li {
+    list-style-type: none;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin-top: 0rem !important;
+    margin-left: 2rem;
+}
+
+ol li,
+ul li {
+    font-weight: $light-weight;
+    list-style: none;
+    list-style-type: none;
+}
+ol {
+    font-weight: $light-weight;
+    list-style-type: decimal;
+    padding: 0;
+    margin-top: 0rem !important;
+    margin-left: 2rem;
 }

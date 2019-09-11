@@ -1,0 +1,19 @@
+{
+    "name": "Stevie Bales",
+    "short_name": "Stevie Bales",
+    "icons": [
+        {
+            "src": "https://www.steviebales.com/assets/favicon/android-chrome-192x192.png?v=JyBk7yk885",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://www.steviebales.com/assets/favicon/android-chrome-256x256.png?v=JyBk7yk885",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#00a5b4",
+    "background_color": "#00a5b4",
+    "display": "standalone"
+}

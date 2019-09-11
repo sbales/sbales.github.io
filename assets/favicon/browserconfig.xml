@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="https://www.steviebales.com/assets/favicon/mstile-150x150.png?v=JyBk7yk885"/>
+            <TileColor>#00bdcd</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
