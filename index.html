@@ -297,7 +297,7 @@
                             <h4 class="topheading reveal-from-bottom text-darkg">Contact</h4>
                         </div>
                         <div class="form-block">
-                            <form role="form" id="contactForm" data-toggle="validator" action="http://bit.ly/2kUScEi" method="POST">
+                            <form role="form" id="contactForm" data-toggle="validator" method="POST">
                                 <div class="row">
                                     <div class="large-6 columns form-group">
                                         <input type="text" class="form-control" id="full-name" name="name" placeholder="Full Name*" required>
@@ -320,6 +320,11 @@
                                     </div>
                                 </div>
                             </form>
+                            <script>
+                                var contactform = document.getElementById('contactForm');
+                                contactform.setAttribute('action', '//formspree.io/' + 'design' + '@' + 'steviebales' + '.' + 'com');
+
+                            </script>
                         </div>
                     </div>
                 </div>
